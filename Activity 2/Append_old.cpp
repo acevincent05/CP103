@@ -18,7 +18,11 @@ int main(){
 		cout << arr[i] << " ";
 	}
 
-    arr[0] = 2;
+	int n;
+
+    arr[n] = 18;
+	n++;
+	
 
 	cout << "\n" << endl;
     cout << "New array: ";
