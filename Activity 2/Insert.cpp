@@ -10,7 +10,7 @@ int main(){
 
 	cout << "Old array: ";
 
-	for(int i=0; i>3; i++){
+	for(int i=0; i<3; i++){
 		cout << arr[i] << " ";
 	}
 
@@ -20,7 +20,7 @@ int main(){
 	
 	arr[positionAdd] = addValue;
 
-	cout << "\n" << endl;
+	cout << "\n";
     cout << "New array: ";
 
 	for(int i=0; i<4; i++){
