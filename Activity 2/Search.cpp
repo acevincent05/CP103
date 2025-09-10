@@ -26,13 +26,9 @@ int main() {
 			break;
 		}
 	}
-
 	
-
 	cout << "\n";
 	cout << "Item " << "'" << foundItem << "'" << " found at position" << " '" << position << "'" << endl;
 
-	
-	return 0;
 	return 0;
 }
