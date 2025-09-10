@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 
     int arr[5] = {3, 6, 9, 12};
-	int positionDelete = 2;
+	
 
 	cout << "Old array: ";
 
@@ -13,16 +13,15 @@ int main(){
 		cout << arr[i] << " ";
 	}
 
-	for(int i=5; i>positionAdd; i--){
-		arr[i] = arr[i-1];
+	int positionDelete = 2;
+	for(int i=positionDelete; i>3-1; i++){
+		arr[i] = arr[i+1];
 	}
-	
-	arr[positionAdd] = addValue;
 
 	cout << "\n";
     cout << "New array: ";
 
-	for(int i=0; i<4; i++){
+	for(int i=0; i<3-1; i++){
 		cout << arr[i] << " ";
 	}
 
