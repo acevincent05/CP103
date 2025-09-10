@@ -8,7 +8,7 @@ int main(){
 	int positionAdd = 2;
 	int addValue = 9;
 
-	for(int i=5, i>positionAdd; i--){
+	for(int i=5; i>positionAdd; i--){
 		arr[i] = arr[i-1];
 	}
 	
