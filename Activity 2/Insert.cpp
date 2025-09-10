@@ -4,7 +4,9 @@ using namespace std;
 
 int main(){
 
-    int arr[5] = {3, 6, 12, 15};
+	int max = 5;
+	int currentSize = 4;
+    int arr[max] = {3, 6, 12, 15};
 	int positionAdd = 2;
 	int addValue = 9;
 
@@ -14,7 +16,7 @@ int main(){
 		cout << arr[i] << " ";
 	}
 
-	for(int i=5; i>positionAdd; i--){
+	for(int i=currentSize; i>positionAdd; i--){
 		arr[i] = arr[i-1];
 	}
 	
@@ -23,7 +25,7 @@ int main(){
 	cout << "\n";
     cout << "New array: ";
 
-	for(int i=0; i<4; i++){
+	for(int i=0; i<currentSize; i++){
 		cout << arr[i] << " ";
 	}
 
