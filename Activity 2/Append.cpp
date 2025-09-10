@@ -27,5 +27,13 @@ int main(){
 		cout << arr[i] << " ";
 	}
 
+	if(currentSize < max){
+		arr[currentSize] = 18;
+		currentSize++;
+	}else{
+		cout << "\n";
+		cout << "LIST FULL";
+	}
+
     return 0;
 }
