@@ -9,19 +9,22 @@ int main(){
 
 	cout << "Old array: ";
 
-	for(int i=0; i<3; i++){
+	for(int i=0; i<4; i++){
 		cout << arr[i] << " ";
 	}
 
 	int positionDelete = 2;
-	for(int i=positionDelete; i>3-1; i++){
+
+	for(int i=positionDelete; i<4-1; i++){
 		arr[i] = arr[i+1];
 	}
+
+	
 
 	cout << "\n";
     cout << "New array: ";
 
-	for(int i=0; i<3-1; i++){
+	for(int i=0; i<4; i++){
 		cout << arr[i] << " ";
 	}
 
