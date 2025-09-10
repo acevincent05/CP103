@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	
-	int arr[4] = {3, 6, 9, 12};
+	int arr[5] = {3, 6, 9, 12, 15};
 	
 	cout << "Array: ";
 
@@ -13,7 +13,7 @@ int main() {
 	}
 
 	cout << "\n" << endl;
-	cout << arr[0] << endl;
+	cout << "Accessed item: " << arr[0] << endl;
 
 	
 	return 0;
