@@ -7,7 +7,6 @@ int main() {
 	int max = 6;
 	int currentSize = 5;
 	int arr[max] = {9, 3, 12, 15, 6};
-	
 
 	cout << "Array: ";
 
