@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
 	
-	int max = 5;
-	int currentSize = 4;
+	int max = 6;
+	int currentSize = 5;
 	int arr[max] = {3, 6, 9, 12, 15};
 	
 
