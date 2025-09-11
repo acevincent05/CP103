@@ -12,10 +12,11 @@ int main() {
 		cout << arr[i] << " ";
 	}
 
+	int value = arr[0];
+
 	cout << "\n" << endl;
-	cout << "Accessed item: " << arr[0] << endl;
+	cout << "Accessed item: " << value << endl;
 
 	
-	return 0;
 	return 0;
 }
