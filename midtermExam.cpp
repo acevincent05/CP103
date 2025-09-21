@@ -71,6 +71,71 @@ void insertMovie() {
     showAll();
 }
 
+// Delete movie at position
+void deleteMovie() {
+    int positionDel;
+    cout << "Enter position to delete (0-" << list_size - 1 << "): ";
+    cin >> positionDel;
+    cin.ignore();
+
+    if (positionDel < 0 || positionDel >= list_size) {
+        cout << "Invalid position!" << endl;
+        return;
+    }
+
+    string* new_list = new string[list_size - 1];
+
+    for (int i = 0; i < positionDel; i++) {
+        new_list[i] = movie_list[i];
+    }
+
+    for (int i = positionDel + 1; i < list_size; i++) {
+        new_list[i - 1] = movie_list[i];
+    }
+
+    delete[] movie_list;
+    movie_list = new_list;
+    list_size--;
+
+    cout << "Movie deleted successfully.\n";
+    showAll();
+}
+
+// Search for a movie
+void searchMovie() {
+    string searchValue;
+    cout << "Enter movie title to search: ";
+    getline(cin, searchValue);
+
+    bool found = false;
+    for (int i = 0; i < list_size; i++) {
+        if (movie_list[i] == searchValue) {
+            cout << "Found at position " << i << endl;
+            found = true;
+        }
+    }
+
+    if (!found) {
+        cout << "Movie not found.\n";
+    }
+}
+
+// Sort movies alphabetically
+void sortMovies() {
+    for (int i = 0; i < list_size - 1; i++) {
+        for (int j = i + 1; j < list_size; j++) {
+            if (movie_list[i] > movie_list[j]) {
+                string temp = movie_list[i];
+                movie_list[i] = movie_list[j];
+                movie_list[j] = temp;
+            }
+        }
+    }
+    cout << "Movies sorted alphabetically.\n";
+    showAll();
+}
+
+
 char mainMenu(){
     system("cls");
     char choice;
