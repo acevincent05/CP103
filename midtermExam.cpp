@@ -40,6 +40,7 @@ char mainMenu(){
     cout << "[0] Back to Main Menu \n" << endl;
     cout << "Enter choice: ";
     cin >> choice;
+    cin.ignore();
     return choice;
 }
 
@@ -48,9 +49,9 @@ int main(){
     inputList();
 
     bool running = true;
+    char choice = mainMenu();
+    
     while(running){
-        
-        char choice = mainMenu();
         switch (choice)
         {
         case '5':
