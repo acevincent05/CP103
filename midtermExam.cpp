@@ -46,6 +46,11 @@ char mainMenu(){
     return choice;
 }
 
+void back() {
+    cout << "\nPress Enter to go back...";
+    cin.get();  // waits for Enter
+}
+
 int main() {
     inputList();
 
@@ -57,9 +62,7 @@ int main() {
         switch (choice) {
         case '5':
             showAll();
-            cout << "\nPress Enter to go back...";
-            cin.ignore(); // clears leftover '\n'
-            cin.get();    // waits for Enter
+            back();
             break;
 
         case '6':
