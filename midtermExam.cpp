@@ -14,8 +14,8 @@ void showAll() {
     }
 }
 
-int main(){
-    system("cls");
+void inputList(){
+        system("cls");
     cout << "Enter Movie list size: ";
     cin >> list_size;
     cin.ignore(); 
@@ -26,8 +26,13 @@ int main(){
         cout << "Enter Movie title: ";
         getline(cin, movie_list[i]);
     }
-    
+}
+
+int main(){
+
+    inputList();
     showAll();
+    
 
     return 0;
 }
