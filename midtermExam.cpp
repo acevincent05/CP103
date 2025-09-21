@@ -29,6 +29,7 @@ void inputList(){
     }
 }
 
+// Insert movie at position
 void insertMovie() {
     int positionAdd;
     string addValue;
@@ -37,6 +38,7 @@ void insertMovie() {
     cin >> positionAdd;
     cin.ignore();
 
+    // checks for valid position
     if (positionAdd < 0 || positionAdd > list_size) {
         cout << "Invalid position!" << endl;
         return;
@@ -120,7 +122,7 @@ void searchMovie() {
     }
 }
 
-// Sort movies alphabetically
+// Sort movies alphabetically using bubble sort
 void sortMovies() {
     for (int i = 0; i < list_size - 1; i++) {
         for (int j = i + 1; j < list_size; j++) {
@@ -134,7 +136,6 @@ void sortMovies() {
     cout << "Movies sorted alphabetically.\n";
     showAll();
 }
-
 
 char mainMenu(){
     system("cls");
@@ -167,22 +168,37 @@ int main() {
         char choice = mainMenu();  // always get fresh choice
 
         switch (choice) {
-        case '1':
+        case '1': // Insert
             insertMovie();
             back();
             break;
 
-        case '5':
+        case '2': // Delete
+            deleteMovie();
+            back();
+            break;
+
+        case '3': // Search
+            searchMovie();
+            back();
+            break;
+
+        case '4': // Sort
+            sortMovies();
+            back();
+            break;
+
+        case '5': // Show all
             showAll();
             back();
             break;
 
-        case '6':
+        case '6': // Reset list
             inputList();
             back();
             break;
 
-        case '0':
+        case '0': // Exit
             cout << "Exiting...";
             running = false;
             break;
@@ -193,7 +209,10 @@ int main() {
         }
     }
 
+    // clean up
+    delete[] movie_list;
+
     return 0;
 }
- 
 
+ 
