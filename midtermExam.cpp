@@ -16,7 +16,7 @@ int main(){
     }
 
     for(int i = 0; i <= list_size - 1; i++){
-        cout << i+1 << ". " << movie_list[i];
+        cout << i+1 << ". " << movie_list[i] << endl;
     }
 
 }
