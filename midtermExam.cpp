@@ -29,6 +29,8 @@ void inputList(){
     }
 }
 
+
+
 char mainMenu(){
     system("cls");
     char choice;
@@ -60,27 +62,27 @@ int main() {
         char choice = mainMenu();  // always get fresh choice
 
         switch (choice) {
+        case '1':
+            showAll();
+            back();
+            break;
+
         case '5':
             showAll();
             back();
             break;
 
         case '6':
-            system("cls");
             inputList();
-            cout << "\nPress Enter to go back...";
-            cin.ignore();
-            cin.get();
+            back();
             break;
 
         case '0':
-            system("cls");
             cout << "Exiting...";
             running = false;
             break;
 
         default:
-            system("cls");
             cout << "Invalid choice, try again.\n";
             break;
         }
