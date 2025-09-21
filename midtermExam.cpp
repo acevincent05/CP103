@@ -6,7 +6,6 @@ using namespace std;
 
 string* movie_list;  // pointer for dynamic array
 int list_size;
-char choice;
 
 void showAll() {
     system("cls"); // clears screen
@@ -29,21 +28,43 @@ void inputList(){
     }
 }
 
-int mainMenu(choice){
+char mainMenu(){
+    system("cls");
     char choice;
     cout << string(5, '=') << "MOVIE LIST MENU" << string(5, '=') << endl;
     cout << "[1] Insert movie at a position" << endl;
     cout << "[2] Delete movie" << endl;
     cout << "[3] Search movie" << endl;
     cout << "[4] Sort movie list" << endl;
-    cout << "[5] Sort all movies" << endl;
+    cout << "[5] Show all movies" << endl;
     cout << "[0] Back to Main Menu" << endl;
     cout << "Enter choice: ";
     cin >> choice;
+    return choice;
 }
 
 int main(){
     
+    char choice = mainMenu();
+
+    bool running = true;
+
+    while(running){
+        mainMenu();
+        switch (choice)
+        {
+        case 5:
+            showAll();
+            break;
+        case 0:
+            system('cls');
+            cout << "Exiting...";
+            running = false;
+        default:
+            break;
+        }
+    }
+
     inputList();
     showAll();
     
