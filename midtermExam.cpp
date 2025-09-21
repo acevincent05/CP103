@@ -9,6 +9,7 @@ int list_size;
 
 void showAll() {
     system("cls"); // clears screen
+    cout << "Movie List:" << endl;
     for(int i = 0; i <= list_size - 1; i++){
         cout << i+1 << ". " << movie_list[i] << endl;
     }
@@ -37,25 +38,32 @@ char mainMenu(){
     cout << "[3] Search movie" << endl;
     cout << "[4] Sort movie list" << endl;
     cout << "[5] Show all movies" << endl;
-    cout << "[0] Back to Main Menu \n" << endl;
+    cout << "[6] Back to Main Menu" << endl;
+    cout << "[0] Exit" << endl;
     cout << "Enter choice: ";
     cin >> choice;
     cin.ignore();
     return choice;
 }
 
-int main(){
-
+int main() {
     inputList();
 
     bool running = true;
-    char choice = mainMenu();
     
-    while(running){
-        switch (choice)
-        {
+    while (running) {
+        char choice = mainMenu();  // <-- update choice every loop
+
+        switch (choice) {
         case '5':
             showAll();
+            cout << "\nPress enter to go back";
+            cin.ignore();
+            cin.get();
+            break;
+        case '6':
+            system("cls");
+            inputList();
             break;
         case '0':
             system("cls");
@@ -63,10 +71,13 @@ int main(){
             running = false;
             break;
         default:
+            system("cls");
+            cout << "Invalid choice, try again.\n";
             break;
         }
     }
 
     return 0;
 }
+ 
 
