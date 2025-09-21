@@ -15,12 +15,13 @@ void showAll() {
 int main(){
     cout << "Enter Movie list size: ";
     cin >> list_size;
-    
+    cin.ignore(); 
+
     movie_list = new string[list_size];
     
     for(int i = 0; i <= list_size - 1; i++){
         cout << "Enter Movie title: ";
-        cin >> movie_list[i];
+        getline(cin, movie_list[i]);
     }
     
     showAll();
