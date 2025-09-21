@@ -31,43 +31,40 @@ void inputList(){
 char mainMenu(){
     system("cls");
     char choice;
-    cout << string(5, '=') << "MOVIE LIST MENU" << string(5, '=') << endl;
+    cout << string(5, '=') << " MOVIE LIST MENU " << string(5, '=') << endl;
     cout << "[1] Insert movie at a position" << endl;
     cout << "[2] Delete movie" << endl;
     cout << "[3] Search movie" << endl;
     cout << "[4] Sort movie list" << endl;
     cout << "[5] Show all movies" << endl;
-    cout << "[0] Back to Main Menu" << endl;
+    cout << "[0] Back to Main Menu \n" << endl;
     cout << "Enter choice: ";
     cin >> choice;
     return choice;
 }
 
 int main(){
-    
-    char choice = mainMenu();
+
+    inputList();
 
     bool running = true;
-
     while(running){
-        mainMenu();
+        
+        char choice = mainMenu();
         switch (choice)
         {
-        case 5:
+        case '5':
             showAll();
             break;
-        case 0:
-            system('cls');
+        case '0':
+            system("cls");
             cout << "Exiting...";
             running = false;
+            break;
         default:
             break;
         }
     }
-
-    inputList();
-    showAll();
-    
 
     return 0;
 }
