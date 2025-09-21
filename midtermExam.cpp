@@ -4,8 +4,8 @@
 
 using namespace std;
 
-string* movie_list;  // pointer for dynamic array
-int list_size;
+string* movie_list = nullptr; // dynamic array pointer
+int list_size = 0;            // current number of movies
 
 void showAll() {
     system("cls"); // clears screen
@@ -29,7 +29,47 @@ void inputList(){
     }
 }
 
+void insertMovie() {
+    int positionAdd;
+    string addValue;
 
+    cout << "Enter position to insert (0-" << list_size << "): ";
+    cin >> positionAdd;
+    cin.ignore();
+
+    if (positionAdd < 0 || positionAdd > list_size) {
+        cout << "Invalid position!" << endl;
+        return;
+    }
+
+    cout << "Enter movie to add: ";
+    getline(cin, addValue);
+
+    // create new array with +1 size
+    string* new_list = new string[list_size + 1];
+
+    // copy old elements up to position
+    for (int i = 0; i < positionAdd; i++) {
+        new_list[i] = movie_list[i];
+    }
+
+    // insert new element
+    new_list[positionAdd] = addValue;
+
+    // copy rest
+    for (int i = positionAdd; i < list_size; i++) {
+        new_list[i + 1] = movie_list[i];
+    }
+
+    // free old memory
+    delete[] movie_list;
+
+    // point to new list
+    movie_list = new_list;
+    list_size++;
+
+    showAll();
+}
 
 char mainMenu(){
     system("cls");
@@ -63,7 +103,7 @@ int main() {
 
         switch (choice) {
         case '1':
-            showAll();
+            insertMovie();
             back();
             break;
 
