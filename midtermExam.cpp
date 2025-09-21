@@ -50,26 +50,32 @@ int main() {
     inputList();
 
     bool running = true;
-    
+
     while (running) {
-        char choice = mainMenu();  // <-- update choice every loop
+        char choice = mainMenu();  // always get fresh choice
 
         switch (choice) {
         case '5':
             showAll();
-            cout << "\nPress enter to go back";
-            cin.ignore();
-            cin.get();
+            cout << "\nPress Enter to go back...";
+            cin.ignore(); // clears leftover '\n'
+            cin.get();    // waits for Enter
             break;
+
         case '6':
             system("cls");
             inputList();
+            cout << "\nPress Enter to go back...";
+            cin.ignore();
+            cin.get();
             break;
+
         case '0':
             system("cls");
             cout << "Exiting...";
             running = false;
             break;
+
         default:
             system("cls");
             cout << "Invalid choice, try again.\n";
