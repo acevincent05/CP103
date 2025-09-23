@@ -11,5 +11,6 @@ namespace second{
 int main() {
     int x = 1;
 
-    std::cout << x;
+    std::cout << "local: " << x << std::endl;
+    std::cout << "namespace first: " << first::x << std::endl;
 }
