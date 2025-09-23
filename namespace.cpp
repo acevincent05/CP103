@@ -14,5 +14,5 @@ int main() {
     std::cout << "local: " << x << std::endl;
     std::cout << "namespace first: " << first::x << std::endl;
     std::cout << "namespace second: " << second::x << std::endl;
-    
+    std:: cout << "add: " << x+first::x+second::x << std::endl;
 }
