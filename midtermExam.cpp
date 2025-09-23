@@ -54,7 +54,6 @@ void insertMovie() {
     // ask for a movie to add
     cout << "Enter movie to add: ";
     getline(cin, addValue);
-
     // create new array with +1 size
     string* new_list = new string[list_size + 1];
 
