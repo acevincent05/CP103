@@ -11,12 +11,16 @@
 // When you're sure you're finished, click Submit for grading
 // with our additional hidden tests.
 
+#include <iostream>
+
 class Pair{
   public:
     int a;
     int b;
 
-
+    void sum(){
+      return a+b;
+    }
 };
 
 int main() {
