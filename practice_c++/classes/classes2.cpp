@@ -8,15 +8,15 @@ class House{
         int windows;
 
     void distance(){
-        std::cout << "This house is too far.";
+        std::cout << "This house is too far." << std::endl;
     }
 
     void size(){
-        std::cout << "This house is too small.";
+        std::cout << "This house is too small." << std::endl;
     }
 
     void price(){
-        std::cout << "This house is too expensive.";
+        std::cout << "This house is too expensive." << std::endl;
     }
 };
 
@@ -32,6 +32,10 @@ int main(){
     std::cout << "Paint color: " << house1.paint << std::endl;
     std::cout << "Doors no.: " << house1.doors << std::endl;
     std::cout << "Windows no.: " << house1.windows << std::endl;
+
+    house1.distance();
+    house1.size();
+    house1.price();
 
     return 0;
 }
