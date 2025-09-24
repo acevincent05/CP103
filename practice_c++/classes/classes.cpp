@@ -40,5 +40,10 @@ int main(){
     human1.eat();
     human1.sleep();
 
+    std::cout << "\n";
+    std::cout << human2.name << std::endl;
+    std::cout << human2.occupation << std::endl;
+    std::cout << human2.age << std::endl;
+
     return 0;
 }
