@@ -6,4 +6,6 @@ class Cube{
         double getSurfaceArea();
         void setLength();
 
+    private:
+        double length_;
 };
