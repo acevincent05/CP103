@@ -1,10 +1,11 @@
 #include <iostream>
 
 class House{
-    int floors;
-    std::string paint;
-    int doors;
-    std::string windows;
+    public:
+        int floors;
+        std::string paint;
+        int doors;
+        std::string windows;
 
     
 };
