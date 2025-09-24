@@ -14,5 +14,9 @@ int main(){
     human1.occupation = "Teacher";
     human1.age = 35;
 
+    std::cout << human1.name << std::endl;
+    std::cout << human1.occupation << std::endl;
+    std::cout << human1.age << std::endl;
+
     return 0;
 }
