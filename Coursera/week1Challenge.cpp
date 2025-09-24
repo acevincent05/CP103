@@ -10,6 +10,15 @@
 // Click Run to see what happens.
 // When you're sure you're finished, click Submit for grading
 // with our additional hidden tests.
+
+class Pair{
+  public:
+    int a;
+    int b;
+
+
+};
+
 int main() {
   Pair p;
   p.a = 100;
