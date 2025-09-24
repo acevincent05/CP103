@@ -28,7 +28,7 @@ int main(){
     house1.doors = 10;
     house1.windows = 8;
 
-    std::cout << house1.floors << std::endl;
+    std::cout << "Floors no.: " << house1.floors << std::endl;
 
 
     return 0;
