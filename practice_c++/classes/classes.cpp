@@ -21,10 +21,15 @@ class Human{
 
 int main(){
     Human human1;
+    Human human2;
 
     human1.name = "Sam";
     human1.occupation = "Teacher";
     human1.age = 35;
+
+    human2.name = "Brad";
+    human2.occupation = "Salesman";
+    human2.age = 25;
 
     std::cout << human1.name << std::endl;
     std::cout << human1.occupation << std::endl;
