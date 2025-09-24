@@ -45,5 +45,9 @@ int main(){
     std::cout << human2.occupation << std::endl;
     std::cout << human2.age << std::endl;
 
+    human2.drink();
+    human2.eat();
+    human2.sleep();
+
     return 0;
 }
