@@ -7,3 +7,7 @@ double Cube::getVolume(){
 double Cube::getSurfaceArea(){
     return 6 * length_ * length_;
 }
+
+void Cube::setLength(double length){
+    length_ = length;
+}
