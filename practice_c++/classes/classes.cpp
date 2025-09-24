@@ -32,6 +32,8 @@ int main(){
     std::cout << "\n";
 
     human1.drink();
+    human1.eat();
+    human1.sleep();
 
     return 0;
 }
