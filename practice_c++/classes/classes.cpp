@@ -29,6 +29,9 @@ int main(){
     std::cout << human1.name << std::endl;
     std::cout << human1.occupation << std::endl;
     std::cout << human1.age << std::endl;
+    std::cout << "\n";
+
+    human1.drink();
 
     return 0;
 }
