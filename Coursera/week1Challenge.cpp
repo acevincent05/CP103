@@ -18,7 +18,7 @@ class Pair{
     int a;
     int b;
 
-    void sum(){
+    int sum(){
       return a+b;
     }
 };
