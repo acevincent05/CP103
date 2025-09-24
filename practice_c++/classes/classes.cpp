@@ -5,6 +5,18 @@ class Human{
         std::string name;
         std::string occupation;
         int age;
+
+    void drink(){
+        std::cout << "This person is drinking." << std::endl;
+    }
+
+    void eat(){
+        std::cout << "This person is eating." << std::endl; 
+    }
+
+    void sleep(){
+        std::cout << "This person is sleeping." << std::endl;
+    }
 };
 
 int main(){
