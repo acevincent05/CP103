@@ -7,7 +7,9 @@ class House{
         int doors;
         std::string windows;
 
-    
+    void distance(){
+        std::cout << "This house is too far.";
+    }
 };
 
 int main(){
