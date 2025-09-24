@@ -5,7 +5,7 @@ class House{
         int floors;
         std::string paint;
         int doors;
-        std::string windows;
+        int windows;
 
     void distance(){
         std::cout << "This house is too far.";
@@ -29,7 +29,9 @@ int main(){
     house1.windows = 8;
 
     std::cout << "Floors no.: " << house1.floors << std::endl;
-
+    std::cout << "Paint color: " << house1.paint << std::endl;
+    std::cout << "Doors no.: " << house1.doors << std::endl;
+    std::cout << "Windows no.: " << house1.windows << std::endl;
 
     return 0;
 }
