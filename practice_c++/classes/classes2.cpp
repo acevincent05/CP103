@@ -10,6 +10,14 @@ class House{
     void distance(){
         std::cout << "This house is too far.";
     }
+
+    void size(){
+        std::cout << "This house is too small.";
+    }
+
+    void price(){
+        std::cout << "This house is too expensive.";
+    }
 };
 
 int main(){
