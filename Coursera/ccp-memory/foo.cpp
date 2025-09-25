@@ -8,6 +8,13 @@ void foo()
     std::cout << "&y in foo(): " << &y << std::endl;
 }
 
+void doo(){
+    int z = 53;
+
+    std::cout<< "z in doo(): " << z << std::endl;
+    std::cout << "&z in doo(): " << &z << std::endl;
+}
+
 int main(){
     int x = 10;
     
@@ -15,5 +22,6 @@ int main(){
     std::cout<< "&num in main(): " << &x << std::endl;
 
     foo();
+    doo();
 
 }
