@@ -6,4 +6,12 @@ int main(){
     std::cout << "*numPtr: " << *numPtr << std::endl;
     std::cout << "numPtr: " << numPtr << std::endl;
     std::cout << "&numPtr: " << &numPtr << std::endl;
+
+    *numPtr = 42;
+
+    std::cout << "*numPtr assigned: " << *numPtr << std::endl;
+    std::cout << "numPtr: " << numPtr << std::endl;
+    std::cout << "&numPtr: " << &numPtr << std::endl;
+
+    return 0;
 }
