@@ -12,5 +12,7 @@ int main(){
 
     *p = 42;
     std::cout<< "*p changed to 42" <<std ::endl;
+    std::cout<< "p: " << p <<std::endl;
+    std::cout<< "*p: " << *p << std::endl;
     std::cout<< "num: " << num << std::endl;
 }
