@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ace Gamitin/Desktop/CP103/CP103/Activity 2",
-      "program": "c:/Users/Ace Gamitin/Desktop/CP103/CP103/Activity 2/build/Debug/outDebug",
+      "cwd": "c:/Users/Ace Gamitin/Desktop/CP103/CP103/Coursera/cpp-heapMemoryPuzzles",
+      "program": "c:/Users/Ace Gamitin/Desktop/CP103/CP103/Coursera/cpp-heapMemoryPuzzles/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

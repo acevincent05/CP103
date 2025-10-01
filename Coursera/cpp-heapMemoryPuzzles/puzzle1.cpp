@@ -10,7 +10,10 @@ int main(){
     cout << i << j << k << *p << *q << *r << endl;
 
     p = q;
-    cout << i << j << k << *p << *p << *r << endl;
+    cout << i << j << k << *p << *q << *r << endl;
+
+    *q = *r;
+    cout << i << j << *p << *q << *r << endl;
 
     return 0;
 }
